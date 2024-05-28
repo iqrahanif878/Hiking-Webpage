@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap&family=Bebas+Neue&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap&family=Raleway:wght@200;300;400;500;600;700;800;900&family=Bitter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Hiking</title>
+</head>
+<body>
+    <header>
+      <div class="header-design">
+        <a href="#"><img src="assets/images/header-design.png" alt=""></a>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand pb-3" href="#">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Class</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Maps</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <form action="#">
+            <input type="search">
+            <button type="submit" class="btn border-none  bg-transparent"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+          </form>
+          <div onclick="showRightbar()" class="menu-btn">
+            <a id="sidebar" href="javascript:void(0);"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid px-0">
+        <div class="row gx-0">
+          <div class="col-md-12">
+            <div class="header-content">
+              <h1>discover your <br>next hike</h1>
+              <p>discover your next<br>hike</p>
+              <div class="header-border"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="sec-1">
+      <div class="container-fluid px-0">
+        <div class="row gx-0">
+          <div class="col-md-12">
+            <div class="sec-1-content">
+              <h2>how to recover from<br> a hike</h2>
+              <div class="sec-1-border"></div>
+              <div onclick="hidecard()" class="sec-1-cross">X</div>
+              <div onclick="showcard()" class="sec-1-cross-2">X</div>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="row gx-0">
+            <div class="col-md-6">
+              <div class="sec-1-cards">
+                <div class="card" id="card-1">
+                  <h5>day 1.</h5>
+                  <div class="card-body-1">
+                    <ul>
+                      <li><a href="#">- Dolor sit amet consectetur</a></li>
+                      <li><a href="#">- Dolor sit in consectetur</a></li>
+                      <li><a href="#">- Dolor sit consectetur</a></li>
+                    </ul>
+                    <div class="card-img">
+                      <img src="assets/images/card-1-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-body-2">
+                    <h5>Lorem, ipsum consectetur<br>21.09.20</h5>
+                    <h6>15.30 hs.</h6>
+                    <div class="dotes">
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <p>5/5</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="sec-1-cards">
+                <div class="card" id="card-2">
+                  <h5>day 2.</h5>
+                  <div class="card-body-1">
+                    <ul>
+                      <li><a href="#">- Dolor sit amet consectetur</a></li>
+                      <li><a href="#">- Dolor sit in consectetur</a></li>
+                      <li><a href="#">- Dolor sit consectetur</a></li>
+                    </ul>
+                    <div class="card-img">
+                      <img src="assets/images/card-2-img.png" alt="">
+                    </div>
+                  </div>
+                  <div class="card-body-2">
+                    <h5>Lorem, ipsum consectetur<br>21.09.20</h5>
+                    <h6>15.30 hs.</h6>
+                    <div class="dotes">
+                      <ul class="circle-dots">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="circle"></li>
+                        <li class="circle"></li>
+                      </ul>
+                      <p>5/5</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div onclick="hidecardd()" id="card-cross" class="card-cross">X</div>
+          <div onclick="showcardd()" class="card-cross-2">X</div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-3">
+        <div class="contaner-fluid px-0">
+          <div class="row gx-0">
+            <div class="col-md-12">
+              <h2>
+                big bend national<br>park hiking guide
+                <div class="sec-3-border"></div>
+              </h2>
+            </div>
+          </div>
+          <div class="row gx-0">
+            <div class="col-md-6">
+              <h3>
+                this hike is the next <br>best option.
+                <div class="sec-3-border-2"></div>
+               </h3>
+            </div>
+            <div class="col-md-6">
+              <div class="sec-3-btn">
+                <p>21.09.20</p>
+                <div class="sec-3-border-botm"></div>
+                <button type="button"><a href="#">See More</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="sec-4">
+      <div class="design">
+        <img src="assets/images/sec-4-design.png" alt="">
+      </div>
+      <div class="container-fluid px-0">
+        <div class="sec-4-content">
+          <div class="row gx-0">
+            <div class="col-md-6">
+              <div class="sec-4-border"></div>
+              <h1 class="letter-space">rock <br> climbing</h1>
+              <div class="sec-4-border-2"></div>
+            </div>
+            <div class="col-md-6">
+              <div class="sec-4-pricing">
+                <ul id="sec-4pricing">
+                  <li>
+                    23.06.20  <br>
+                    <span>20.00 hs</span>
+                  </li>
+                  <li>
+                    Price <br>
+                    $900
+                  </li>
+                </ul>
+                <div class="sec-4-pricing-border"></div>
+                <div onclick="hidepricing()" class="sec-4-cross">X</div>
+                <div onclick="showpricing()" class="sec-4-cross-2">X</div>
+              </div>
+            </div>
+          </div>
+          <div class="row gx-0">
+            <div class="col-md-6">
+              <div class="class-events">
+                <h4>1. classes & events</h4>
+                <p>Lorem ipsum dolor sit amet consecte- tur adipisicing elit modi, possise perspiciatis atqu with possis.</p>
+                <h6>10 modules <br>divided into 7 weekends</h6>
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <!-- offset -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section">
+      <div class="container-fluid px-0">
+        <div class="sec-5">
+          <div class="row gx-0">
+            <div class="col-md-12">
+              <div class="sec-5-heading">
+                <div class="sec-5-border"></div>
+                <h1 class="text-purple">places to visit<br>in autumn</h1>
+                <div class="sec-5-border-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="sec-5-cards">
+            <div class="row gx-0">
+              <div class="col-md-4">
+                <div class="sec-5-card">
+                  <div class="sec-5-card-img">
+                    <img src="assets/images/card-img-1.png" alt="">
+                  </div>
+                  <div class="card-body">
+                    <div class="dotted"></div>
+                    <h3>mountain loop</h3>
+                    <p>Lorem ipsum amet sit consectetur consetatur...</p>
+                    <h5>Location 0.3 miles.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="sec-5-card">
+                  <div class="sec-5-card-img">
+                    <img src="assets/images/card-img-1.png" alt="">
+                  </div>
+                  <div class="card-body">
+                    <div class="dotted"></div>
+                    <h3>mountain loop</h3>
+                    <p>Lorem ipsum amet sit consectetur consetatur...</p>
+                    <h5>Location 0.2 miles.</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="sec-5-card">
+                  <div class="sec-5-card-img">
+                    <img src="assets/images/card-img-1.png" alt="">
+                  </div>
+                  <div class="card-body">
+                    <div class="dotted"></div>
+                    <h3>mountain loop</h3>
+                    <p>Lorem ipsum amet sit consectetur consetatur...</p>
+                    <h5>Location 0.6 miles.</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row gx-0 text-center">
+            <div class="col-md-12">
+              <button type="button"><a href="#">see more</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-3 sec-6">
+      <div class="contaner-fluid px-0">
+        <div class="row gx-0">
+          <div class="col-md-12">
+            <h2 class="text-end">
+              hiking $ <br>backpacking
+              <div class="sec-6-border"></div>
+            </h2>
+          </div>
+        </div>
+        <div class="row gx-0">
+          <div class="col-md-6">
+            <div class="sec-3-btn">
+              <p>21.09.20</p>
+              <div class="sec-6-border-botm"></div>
+              <button type="button"><a href="#">See More</a></button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-end">
+             this hike is the next <br>best option.
+             <div class="sec-6-border-2"></div>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section">
+      <div class="container-fluid px-0">
+        <div class="sec-7">
+          <div class="row gx-0">
+            <div class="col-md-12">
+              <div class="sec-7-heading">
+                <div id="sec-7-heading">
+                  <h1  class="text-gray">hiking and<br>camping classes</h1>
+                  <div class="sec-7-border-botm"></div>
+                </div>
+                <div onclick="hideheading()" class="sec-7-cross">X</div>
+                <div onclick="showheading()" class="sec-7-cross-2">X</div>
+              </div>
+            </div>
+          </div>
+          <div class="sec-7-cards">
+            <div class="row gx-0" id="cards">
+              <div class="col-md-4">
+                <div class="sec-7-card">
+                  <div class="sec-7-card-img">
+                    <img src="assets/images/card-2-img.png" alt="">
+                  </div>
+                  <div class="sec-7-card-body">
+                    <h3>activities</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit and a consequatur.</p>
+                    <button type="button"><a href="#">see more</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="sec-7-card">
+                  <div class="sec-7-card-img">
+                    <img src="assets/images/card-3-img.png" alt="">
+                  </div>
+                  <div class="sec-7-card-body">
+                    <h3>hiking</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit and a consequatur.</p>
+                    <button type="button"><a href="#">see more</a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="sec-7-card">
+                  <div class="sec-7-card-img">
+                    <img src="assets/images/card-2-img.png" alt="">
+                  </div>
+                  <div class="sec-7-card-body">
+                    <h3>mountain</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit and a consequatur.</p>
+                    <button type="button"><a href="#">see more</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div onclick="hidecards()" id="cards-cross-2" class="cards-cross">X</div>
+            <div onclick="showcards()" class="cards-cross-2">X</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-8">
+      <div class="sec-8-design">
+        <img src="assets/images/sec-8-design.png" alt="">
+      </div>
+      <div class="container-fluid px-0">
+        <div class="sec-8-content">
+          <div class="row gx-0">
+            <div class="col-md-6">
+              <div class="sec-8-pricing">
+                <ul id="sec-8-pricing">
+                  <li>
+                    23.06.20  <br>
+                    <span>20.00 hs</span>
+                  </li>
+                  <li>
+                    Price <br>
+                    $900
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="sec-8-heading">
+                <div class="sec-8-border"></div>
+                <h1 class="letter-space text-gray">moutaineering<br>ice climbing</h1>
+                <div class="sec-8-border-2"></div>
+                <div onclick="hidepricings()" class="sec-8-cross">X</div>
+                <div onclick="showpricings()" class="sec-8-cross-2">X</div>
+              </div>
+            </div>
+          </div>
+          <div class="row gx-0">
+            <div class="col-md-6 ">
+              <!-- offset -->
+            </div>
+            <div class="col-md-6">
+              <div class="class-events">
+                <h4>2. activities</h4>
+                <p>Lorem ipsum dolor sit amet consecte- tur adipisicing elit modi, possise perspiciatis atqu with possis.</p>
+                <h6>10 modules <br>divided into 7 weekends</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-9">
+      <div onclick="hidetext()" id="sec-9-cross" class="sec-9-cross">X</div>
+      <div onclick="showtext()" class="sec-9-cross-2">X</div>
+      <div class="container-fluid">
+        <div id="sec-9">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="sec-9-content">
+                <h5>how to recover from <br> a hike</h5>
+                <div class="sec-9-border-botm"></div>
+                <h3>15.09.20</h3>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="sec-9-content">
+                  <h2>  50% <span>off</span></h2>
+                  <p>Lorem ipsum consectetur. <br>21.09.20</p>
+                  <h6> 15.30 hs.</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-10">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="sec-10-content" id="sec-10">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. sed do  Dignissimos magni nostrum sapiente?</p>
+              <div class="img"><img src="assets/images/sec-10_design.png" alt=""></div>
+              <button type="button"><a href="#">see more</a></button>
+            </div>
+            <div id="sec-10-cross" onclick="hidecontent()" class="sec-10-cross">X</div>
+            <div onclick="showcontent()" class="sec-10-cross-2">X</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container-fluid px-0">
+        <div class="row gx-0">
+          <div class="col-md-6"> 
+            <div class="footer-content">
+              <h2>about</h2>
+              <p>Lorem ipsum dolor sit amet, <br> and consectetur adipisicing Quibusdam Sint beat and adipisicing Quibusdam</p>
+              <a href="#"><img src="assets/images/logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-links">
+              <div class="footer-link">
+                <h2>about</h2>
+                <ul>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Join us</a></li>
+                  <li><a href="#">Ethic</a></li>
+                  <li><a href="#">Goals</a></li>
+                </ul>
+              </div>
+              <div class="footer-link">
+                <h2>about</h2>
+                <ul>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Join us</a></li>
+                  <li><a href="#">Ethic</a></li>
+                  <li><a href="#">Goals</a></li>
+                </ul>
+              </div>
+              <div class="footer-link">
+                <h2>about</h2>
+                <ul>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Join us</a></li>
+                  <li><a href="#">Ethic</a></li>
+                  <li><a href="#">Goals</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- right-sidebar***** -->
+    <div class="right-bar-menu" id="right-bar">
+      <div class="right-bar">
+        <div class="close-sidebar">
+          <button onclick="closeSidebar()">
+            <a href="#">
+              <i class="fa-sharp fa-solid fa-xmark"></i>
+            </a>
+          </button>
+        </div>
+        <div class="right-bar-menus">
+          <a href="#">
+            <img src="assets/images/logo.png" alt="">
+          </a>
+          <ul class="">
+            <li class="">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="#">Class</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="#">Tours</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="#">Maps</a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form action="#">
+            <input type="search">
+            <button type="submit" class="btn border-none  bg-transparent"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      function hidecard() {
+        document.getElementById("card-1").style.display = "none";
+      }
+      function showcard() {
+        document.getElementById("card-1").style.display = "block";
+      }
+      function hidecardd() {
+        var element = document.getElementById("card-2");
+          var crossElement = document.getElementById("card-cross");
+          if (element && crossElement) {
+              element.style.display = "none";
+              crossElement.classList.add("card-style");
+          }
+      }
+      function showcardd() {
+        document.getElementById("card-2").style.display = "block";
+      }
+      function hidepricing() {
+        document.getElementById("sec-4pricing").style.display = "none";
+      }
+      function showpricing() {
+        document.getElementById("sec-4pricing").style.display = "flex";
+      }
+      function hidepricings() {
+        document.getElementById("sec-8-pricing").style.display = "none";
+      }
+      function showpricings() {
+        document.getElementById("sec-8-pricing").style.display = "flex";
+      }
+      function hidetext() {
+          var element = document.getElementById("sec-9");
+          var crossElement = document.getElementById("sec-9-cross");
+  
+          if (element && crossElement) {
+              element.style.display = "none";
+              crossElement.classList.add("sec-9-style");
+          }
+      }
+      function showtext() {
+        document.getElementById("sec-9").style.display = "block";
+      }
+      function hidecontent() {
+          var element = document.getElementById("sec-10");
+          var crossElement = document.getElementById("sec-10-cross");
+  
+          if (element && crossElement) {
+              element.style.display = "none";
+              crossElement.classList.add("sec-10-style");
+          }
+      }
+      function showcontent() {
+        document.getElementById("sec-10").style.display = "block";
+      }
+      function hideheading() {
+        document.getElementById("sec-7-heading").style.display = "none";
+      }
+      function showheading() {
+        document.getElementById("sec-7-heading").style.display = "block";
+      }
+      function hidecards() {
+        var element = document.getElementById("cards");
+          var crossElement = document.getElementById("cards-cross-2");
+  
+          if (element && crossElement) {
+              element.style.display = "none";
+              crossElement.classList.add("cards-style");
+          }
+      }
+      function showcards() {
+        document.getElementById("cards").style.display = "flex";
+      }
+      // function showRightbar() {
+      //   document.getElementById("right-bar").style.display = "block";
+      // }
+      // function closeSidebar() {
+      //   document.getElementById("right-bar").style.display = "none";
+      // }
+      $('.menu-btn').on('click', function() {
+        $('.right-bar-menu').toggleClass('show');
+      });
+      $('.close-sidebar').on('click', function() {
+        $('.right-bar-menu').removeClass('show');
+      });
+    </script>
+</body>
+</html>
